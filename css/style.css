@@ -1,0 +1,203 @@
+/* Import Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Jost', sans-serif;
+    background-color: hsl(0 , 0% , 95%);
+}
+
+.main-area {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    
+}
+
+.main-area .music-area {
+    width: 40rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    border-radius: 4rem;
+}
+
+.main-area ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-area ul li{
+    flex-direction: column;
+    list-style: none;
+    color: #ffffff;
+    font: normal 600 7rem 'Jost', sans-serif;
+    animation: light 1.3s linear infinite;
+}
+
+.main-area ul li + ul{
+    margin: 0rem 2rem;
+}
+
+.main-area .music-area h1{
+    font: normal 600 4rem 'Jost', sans-serif;
+    margin-top: 2rem;
+    letter-spacing: .5rem;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main-area .music-area h4{
+    font: normal 300 2rem 'Jost', sans-serif;
+    color: #cccaca;
+    margin-top: 1rem;
+}
+
+.main-area .music-area .img-area {
+    height: 25rem;
+    width: 25rem;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.main-area .music-area .img-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-area .music-area .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    margin: auto;
+    align-items: center;
+}
+
+.main-area .music-area .icons .fas{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.main-area .music-area .icons .fas:hover{
+    color: gray;
+}
+
+.main-area .music-area .icons .main-btn{
+    background-color: black;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f6f6f6;;
+}
+
+.main-area .music-area .icons .main-btn:hover{
+    background-color: #f6f6f6;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Animation */
+
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes light {
+    0%{
+        color: #ffffff;
+        text-shadow: none;
+    }
+    70%{
+        color: #ffffff;
+        text-shadow: none;
+    }
+    100%{
+        color: #000000;
+        text-shadow: 0 0 1rem #ffffff, 0 0 7rem #ffffff;
+    }
+}
+
+.main-area ul:nth-child(1) li:nth-child(1){
+    animation-delay: 0s;
+}
+.main-area ul:nth-child(1) li:nth-child(2){
+    animation-delay: 0.1s;
+}
+.main-area ul:nth-child(1) li:nth-child(3){
+    animation-delay: 0.2s;
+}
+.main-area ul:nth-child(1) li:nth-child(4){
+    animation-delay: 0.3s;
+}
+.main-area ul:nth-child(1) li:nth-child(5){
+    animation-delay: 0.4s;
+}
+.main-area ul:nth-child(1) li:nth-child(6){
+    animation-delay: 0.5s;
+}
+.main-area ul + ul:nth-child(1) li:nth-child(1){
+    animation-delay: 0.1s; 
+}
+.main-area ul + ul:nth-child(1) li:nth-child(2){
+    animation-delay: 0.2s;
+}
+.main-area ul:nth-child(1) li:nth-child(7){
+    animation-delay: 0s;
+}
+.main-area ul:nth-child(1) li:nth-child(8){
+    animation-delay: 0.1s;
+}
+.main-area ul:nth-child(1) li:nth-child(9){
+    animation-delay: 0.2s;
+}
+.main-area ul:nth-child(1) li:nth-child(10){
+    animation-delay: 0.3s;
+}
+.main-area ul:nth-child(1) li:nth-child(11){
+    animation-delay: 0.4s;
+}
+.main-area ul:nth-child(1) li:nth-child(12){
+    animation-delay: 0.5s;
+}
+.main-area ul:nth-child(1) li:nth-child(13){
+    animation-delay: 0.6s;
+}
+.main-area ul:nth-child(1) li:nth-child(14){
+    animation-delay: 0.7s;
+}
+
+@media(max-width: 768px){
+    .main-area ul li{
+        flex-direction: column;
+        list-style: none;
+        color: #ffffff;
+        margin: 3rem 0rem;
+        font: normal 700 3.5rem 'Jost', sans-serif;
+        animation: light 1.3s linear infinite;
+    }
+}
